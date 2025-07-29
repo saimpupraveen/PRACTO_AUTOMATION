@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="city" value="Bangalore"/>
+    <classes>
+       <class name="com.tests.HomePageTest"/> 
+      <class name="com.tests.DiagnosticsPageTest"/>  
+     <class name="com.tests.CorporateWellnessPageTest"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

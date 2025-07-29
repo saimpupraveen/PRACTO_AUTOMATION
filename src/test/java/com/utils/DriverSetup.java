@@ -1,5 +1,7 @@
-package com.tests;
+package com.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -8,14 +10,19 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.pages.HomePage;
+
 
 public class DriverSetup {
 	
 	public static WebDriver driver;
 	
+	 private static final Logger logger = LogManager.getLogger(DriverSetup.class);
+	
 
- @BeforeClass
+
  public static WebDriver getDriver(String browser) {
+	 
 		 	 
 		 switch (browser.toLowerCase()) {
          case "chrome":
@@ -25,23 +32,22 @@ public class DriverSetup {
              driver = new EdgeDriver();
              break;
          default:
-             throw new IllegalArgumentException("Unsupported browser: " + browser);
+        	 driver = new ChromeDriver();
      }
 		 
 		 driver.manage().window().maximize();
 	        return driver;
 	    }
  
- 
- @AfterClass
- public void tearDown() {
-    
-     // Capture screenshot on failure
+ public static void open() {
+     driver.get("https://www.practo.com/");
+     driver.manage().window().maximize();
+     logger.info("Opened Practo homepage.");
      
-     if (driver != null) {
-         driver.quit();
-     }
  }
+ 
+
+
 	
 
 }

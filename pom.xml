@@ -25,5 +25,21 @@
 			<version>7.11.0</version>
 			<scope>test</scope>
 		</dependency>
+	    
+    <!-- Log4j 2 Core -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.20.0</version> <!-- Or latest stable -->
+    </dependency>
+
+    <!-- Log4j 2 API -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.20.0</version>
+    </dependency>
+	
+
 	</dependencies>
 </project>

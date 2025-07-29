@@ -1,0 +1,72 @@
+2025-07-29 14:32:27 [main] INFO  com.pages.HomePage - Homepage initialized.
+2025-07-29 14:32:33 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-07-29 14:32:33 [main] INFO  com.pages.HomePage - Searching for hospitals in: Bangalore
+2025-07-29 14:32:48 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+2025-07-29 14:32:51 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospitals
+2025-07-29 14:32:53 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:32:56 [main] INFO  com.pages.HomePage - Added hospital: Koshys Hospital
+2025-07-29 14:33:03 [main] INFO  com.pages.HomePage - Added hospital: Apollo Spectra Hospitals
+2025-07-29 14:33:06 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:33:09 [main] INFO  com.pages.HomePage - Added hospital: Trilife Hospital
+2025-07-29 14:33:12 [main] INFO  com.pages.HomePage - Added hospital: Apollo Cradle & Children’s Hospital
+2025-07-29 14:34:55 [main] INFO  com.pages.HomePage - Homepage initialized.
+2025-07-29 14:35:01 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-07-29 14:35:02 [main] INFO  com.pages.HomePage - Searching for hospitals in: Bangalore
+2025-07-29 14:35:17 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+2025-07-29 14:35:20 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospitals
+2025-07-29 14:35:23 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:35:26 [main] INFO  com.pages.HomePage - Added hospital: Koshys Hospital
+2025-07-29 14:35:31 [main] INFO  com.pages.HomePage - Added hospital: Apollo Spectra Hospitals
+2025-07-29 14:35:34 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:35:37 [main] INFO  com.pages.HomePage - Added hospital: Trilife Hospital
+2025-07-29 14:35:39 [main] INFO  com.pages.HomePage - Added hospital: Apollo Cradle & Children’s Hospital
+2025-07-29 14:39:46 [main] INFO  com.pages.HomePage - Homepage initialized.
+2025-07-29 14:39:52 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-07-29 14:39:53 [main] INFO  com.pages.HomePage - Searching for hospitals in: Bangalore
+2025-07-29 14:40:07 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+2025-07-29 14:40:09 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospitals
+2025-07-29 14:40:11 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:40:13 [main] INFO  com.pages.HomePage - Added hospital: Koshys Hospital
+2025-07-29 14:40:18 [main] INFO  com.pages.HomePage - Added hospital: Apollo Spectra Hospitals
+2025-07-29 14:40:20 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:40:22 [main] INFO  com.pages.HomePage - Added hospital: Trilife Hospital
+2025-07-29 14:40:25 [main] INFO  com.pages.HomePage - Added hospital: Apollo Cradle & Children’s Hospital
+2025-07-29 14:49:11 [main] INFO  com.pages.HomePage - Homepage initialized.
+2025-07-29 14:49:24 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-07-29 14:49:24 [main] INFO  com.pages.HomePage - Searching for hospitals in: Bangalore
+2025-07-29 14:49:37 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+2025-07-29 14:49:39 [main] INFO  com.pages.HomePage - Added hospital: Manipal Hospitals
+2025-07-29 14:49:41 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:49:44 [main] INFO  com.pages.HomePage - Added hospital: Koshys Hospital
+2025-07-29 14:49:48 [main] INFO  com.pages.HomePage - Added hospital: Apollo Spectra Hospitals
+2025-07-29 14:49:51 [main] INFO  com.pages.HomePage - Added hospital: Motherhood Hospital
+2025-07-29 14:49:53 [main] INFO  com.pages.HomePage - Added hospital: Trilife Hospital
+2025-07-29 14:49:55 [main] INFO  com.pages.HomePage - Added hospital: Apollo Cradle & Children’s Hospital
+2025-07-29 14:50:07 [main] INFO  com.pages.DiagnosticsPage - DiagnosticsPage initialized with implicit wait.
+2025-07-29 14:50:13 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-07-29 14:50:13 [main] INFO  com.pages.DiagnosticsPage - Navigating to Surgeries section.
+2025-07-29 14:50:14 [main] INFO  com.pages.DiagnosticsPage - Navigating to Lab Tests section.
+2025-07-29 14:50:16 [main] INFO  com.pages.DiagnosticsPage - Extracting top cities under Diagnostics.
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Bangalore
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Delhi
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Mumbai
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Chennai
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Hyderabad
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Kolkata
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Pune
+2025-07-29 14:50:17 [main] INFO  com.pages.DiagnosticsPage - City found: Ahmedabad
+2025-07-29 14:50:24 [main] INFO  com.pages.CorporateWellnessPage - CorporateWellnessPage initialized.
+2025-07-29 14:50:32 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-07-29 14:50:32 [main] INFO  com.pages.CorporateWellnessPage - Navigating to 'For Corporates' menu.
+2025-07-29 14:50:32 [main] INFO  com.pages.CorporateWellnessPage - Clicking on 'Health & Wellness Plans' option.
+2025-07-29 14:50:45 [main] INFO  com.pages.CorporateWellnessPage - Excel data read successfully from: TestInput\CorporateWellnessPageData.xlsx
+2025-07-29 14:50:45 [main] INFO  com.pages.CorporateWellnessPage - Filling form with invalid data.
+2025-07-29 14:50:46 [main] INFO  com.pages.CorporateWellnessPage - Selecting dropdown values.
+2025-07-29 14:50:46 [main] INFO  com.pages.CorporateWellnessPage - Forcing click on Schedule button.
+2025-07-29 14:50:46 [main] INFO  com.pages.CorporateWellnessPage - Capturing error messages.
+2025-07-29 14:50:46 [main] WARN  com.pages.CorporateWellnessPage - No error messages found.
+2025-07-29 14:50:46 [main] INFO  com.pages.CorporateWellnessPage - Checking for invalid fields.
+2025-07-29 14:50:46 [main] WARN  com.pages.CorporateWellnessPage - Empty Name field.
+2025-07-29 14:50:46 [main] WARN  com.pages.CorporateWellnessPage - Empty Organization Name field.
+2025-07-29 14:50:46 [main] WARN  com.pages.CorporateWellnessPage - Invalid Contact Number.
+2025-07-29 14:50:46 [main] WARN  com.pages.CorporateWellnessPage - Invalid Email ID.

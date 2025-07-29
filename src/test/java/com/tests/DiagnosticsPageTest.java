@@ -6,16 +6,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
+import com.pages.DiagnosticsPage;
 import com.pages.HomePage;
 import com.utils.DriverSetup;
 
-public class HomePageTest {
-	
-	
-	
+public class DiagnosticsPageTest {
+  
 	private WebDriver driver;
-	private HomePage homePage;
+	private DiagnosticsPage page;
 	
 	
 	@BeforeClass
@@ -23,23 +21,22 @@ public class HomePageTest {
 	public void setup(String brower)
 	{
 	 driver=DriverSetup.getDriver(brower);
-	 homePage=new HomePage(driver);
+	 page=new DiagnosticsPage(driver);
 	 DriverSetup.open();
 	 
 	}
 	
-	
-	@Test(priority = 1)
-	@Parameters("city")
-	public void searchHospitals(String city)
+	@Test(priority = 0)
+	public void navigateToLabTests()
 	{
-		homePage.searchhospital(city);
+		
+		page.navigateToLabTests();
 	}
 	
-	@Test(priority = 2)
-	public   void filterHospitals()
+	@Test(priority = 1)
+	public void getTopCities()
 	{
-		homePage.filterHospitals();
+		page.getTopCities();
 	}
 	
 	@AfterClass
@@ -51,5 +48,6 @@ public class HomePageTest {
 	         driver.quit();
 	     }
 	 }
-  
+	
+	
 }
