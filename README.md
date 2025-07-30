@@ -47,7 +47,7 @@ Managed via Maven (`pom.xml`):
 - Screenshots for failed tests are saved in `screenshots/`.
 
 ## Author
-Alimili Rahul
+Saimpu Praveen
 
 ## License
 This project is for educational and internal automation purposes.
