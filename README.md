@@ -46,8 +46,8 @@ Managed via Maven (`pom.xml`):
 - Review results in `TestOutput/TestExecutionLogs.xlsx` and HTML reports.
 - Screenshots for failed tests are saved in `screenshots/`.
 
-## Author
-Saimpu Praveen
+## Authors
+Saimpu Praveen, Animesh Dwivedi, Akarsha Ravirala and Rahul Alimili
 
 ## License
 This project is for educational and internal automation purposes.
