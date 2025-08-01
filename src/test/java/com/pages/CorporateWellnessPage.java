@@ -90,38 +90,7 @@ public class CorporateWellnessPage {
         interestDrop.sendKeys(data[5]);
     }
 
-    public void triggerValidationManually() {
 
-        driver.findElement(nameField).click();
-        driver.findElement(organizationField).click();
-        driver.findElement(contactField).click();
-        driver.findElement(emailField).click();
-        driver.findElement(sizeDropdown).click();
-    }
-
-    public void captureErrorMessages()  {
-        logger.info("Capturing error messages.");
-        
-        List<WebElement> errorMessages = driver.findElements(By.className("error-message"));
-        if (errorMessages.isEmpty()) {
-            WriteToExcel.log("TestCase3_InvalidForm", "No error messages found.");
-            logger.warn("No error messages found.");
-        } else {
-            for (WebElement error : errorMessages) {
-                String message = error.getText();
-                System.out.println(message);
-                WriteToExcel.log("TestCase3_InvalidForm", "Error: " + message);
-                logger.warn("Error message captured: " + message);
-            }
-        }
-    }
-
-    public boolean isScheduleButtonEnabled() {
-        WebElement button = wait.until(ExpectedConditions.presenceOfElementLocated(scheduleButton));
-        boolean enabled = button.isEnabled();
-        logger.info("Schedule button enabled: " + enabled);
-        return enabled;
-    }
 
     public void forceClickScheduleButton() {
         logger.info("Forcing click on Schedule button.");

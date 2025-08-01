@@ -20,9 +20,9 @@ public class HomePageTest {
 	
 	@BeforeClass
 	@Parameters("browser")
-	public void setup(String brower)
+	public void setup(String browser)
 	{
-	 driver=DriverSetup.getDriver(brower);
+	 driver=DriverSetup.getDriver(browser);
 	 homePage=new HomePage(driver);
 	 DriverSetup.open();
 	 

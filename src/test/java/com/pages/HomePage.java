@@ -24,7 +24,7 @@ import com.utils.WriteToExcel;
 
 public class HomePage {
 	
-	  private static final Logger logger = LogManager.getLogger(HomePage.class);
+	private static final Logger logger = LogManager.getLogger(HomePage.class);
 
 	private WebDriver driver;
 	private WebDriverWait wait;
@@ -34,7 +34,6 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		super();
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		logger.info("Homepage initialized.");
 	}
 	
@@ -50,7 +49,7 @@ public class HomePage {
 	         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	            WebElement cityInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Search location']")));
 	            cityInput.clear();
-	            Thread.sleep(1000);
+	            
 	            cityInput.sendKeys(city);
 	            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'" + city + "')]"))).click();
 
@@ -59,7 +58,7 @@ public class HomePage {
 	            search.sendKeys("Hospital");
 	            Thread.sleep(2000);
 	            WebElement hospitalOption = wait.until(ExpectedConditions.elementToBeClickable(
-	            	    By.xpath("(//div[@id='c-omni-container']//div[contains(@class, 'c-omni-suggestion-item__content__title')])[4]")));
+	            By.xpath("(//div[@id='c-omni-container']//div[contains(@class, 'c-omni-suggestion-item__content__title')])[4]")));
 	            new Actions(driver).moveToElement(hospitalOption).click().perform();
 	            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='line-1']")));
 	        } catch (Exception e) {
@@ -77,13 +76,20 @@ public class HomePage {
 	       String  mainWindow = driver.getWindowHandle();
 	        try {
 	                js.executeScript("window.scrollBy(0, 1000)");
-	                hospitals = driver.findElements(By.xpath("//h2[@class='line-1']"));               
+	                hospitals = driver.findElements(By.xpath("//h2[@class='line-1']")); 
+	                for(WebElement hos:hospitals)
+	                {
+	                	  WriteToExcel.log("TestCase1_HospitalFilter", " hospital name: " + hos.getText());
+	                        logger.info(" hospital name: " + hos.getText());
+	                }
 	        } catch (Exception e) {
 	        	WriteToExcel.log("TestCase1_HospitalFilter", "Scrolling error: " + e.getMessage());
 	            logger.error("Scrolling error: " + e.getMessage(), e);
 	        }
 
 	        List<WebElement> hospitals247 = driver.findElements(By.xpath("//span[contains(text(),'Open 24x7')]//ancestor::div[2]//h2[@class='line-1']"));
+	        WriteToExcel.log("TestCase1_HospitalFilter", "filtered hospitals list ");
+            logger.info("filtered hospitals list");
 	        for (WebElement hospital : hospitals247) {
 	            String name = hospital.getText();
 	            try {
@@ -98,6 +104,7 @@ public class HomePage {
 
 	                wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("bubbles")));
 	                WebElement ratingElement = driver.findElement(By.xpath("//span[@class='common__star-rating__value']"));
+	              
 	                double rating = Double.parseDouble(ratingElement.getText());
 
 	                if (rating > 3.5) {
@@ -106,11 +113,11 @@ public class HomePage {
 
 	                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Amenities')]")));
 	                    boolean hasParking = driver.findElements(By.xpath("//span[contains(text(),'Parking')]")).size() > 0;
-
+	                   
 	                    if (hasParking) {
 	                    	 filteredHospitals.add(name);  
-	                        WriteToExcel.log("TestCase1_HospitalFilter", "Added hospital: " + name);
-	                        logger.info("Added hospital: " + name);
+	                        WriteToExcel.log("TestCase1_HospitalFilter", "filtered hospital: " + name);
+	                        logger.info("filtered hospital: " + name);
 	                        
 	                    }
 	                }
@@ -121,21 +128,13 @@ public class HomePage {
 	            } finally {
 	                driver.close();
 	                driver.switchTo().window(mainWindow);
+	               
 	            }
-	                
+	            logger.info("Driver closed.");   
 	        }
 	 }
 	        
-	        public void printHospitalsWithRating() {
-	            WriteToExcel.log("TestCase1_HospitalFilter", "Printing and Writing");
-	            logger.info("Printing filtered hospitals...");
-	            for (String str : filteredHospitals) {
-	                WriteToExcel.log("TestCase1_HospitalFilter", str);
-	                logger.info("Hospital: " + str);
-	            }
-	            driver.quit();
-	            logger.info("Driver closed.");
-	        }
+	      
 	        
 	    }
 

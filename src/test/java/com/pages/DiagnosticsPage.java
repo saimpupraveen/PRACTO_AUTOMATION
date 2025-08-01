@@ -14,22 +14,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.utils.WriteToExcel;
 
 
-
-
-
 public class DiagnosticsPage {
 	
 	
 	private WebDriver driver;
-	private WebDriverWait wait;
+
 	private static final Logger logger = LogManager.getLogger(DiagnosticsPage.class);
 	
 
 	public DiagnosticsPage(WebDriver driver) {
 		super();
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		logger.info("DiagnosticsPage initialized with implicit wait.");
+	
+		logger.info("DiagnosticsPage initialized ");
 	}
 	
 	  public  void navigateToLabTests() {
@@ -50,7 +47,7 @@ public class DiagnosticsPage {
 	    public  void getTopCities() {
           logger.info("Extracting top cities under Diagnostics.");
 	        List<WebElement> cities = driver.findElements(By.cssSelector("ul > li > div.u-margint--standard"));
-	        List<String> cityNames = cities.stream().map(WebElement::getText).collect(Collectors.toList());
+	        List<String> cityNames = cities.stream().map((e)->e.getText()).collect(Collectors.toList());
 
 	        WriteToExcel.log("TestCase2_TopCities", "Top Cities:");
 	        cityNames.forEach(city -> {

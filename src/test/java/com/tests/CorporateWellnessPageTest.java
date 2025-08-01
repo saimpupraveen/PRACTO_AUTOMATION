@@ -18,9 +18,9 @@ public class CorporateWellnessPageTest {
 	
 	@BeforeClass
 	@Parameters("browser")
-	public void setup(String brower)
+	public void setup(String browser)
 	{
-	 driver=DriverSetup.getDriver(brower);
+	 driver=DriverSetup.getDriver(browser);
 	 page=new CorporateWellnessPage(driver);
 	 DriverSetup.open();
 	 
@@ -40,13 +40,13 @@ public class CorporateWellnessPageTest {
 		page.fillFormWithInvalidData();
 		page.selectDropdowns();
 		page.forceClickScheduleButton();
+		
 	
 	}
 	
 	@Test(priority = 2)
 	public void printErrorMessages()
 	{
-		page.captureErrorMessages();
 		page.logInvalidFields();
 
 		
