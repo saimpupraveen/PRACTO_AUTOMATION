@@ -1,31 +1,48 @@
-2025-08-01 12:06:06 [main] INFO  com.pages.HomePage - Homepage initialized.
-2025-08-01 12:06:12 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
-2025-08-01 12:06:13 [main] INFO  com.pages.HomePage - Searching for hospitals in: Bangalore
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Manipal Hospitals
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Motherhood Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Koshys Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Navachethana Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Apollo Spectra Hospitals
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Motherhood Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Trilife Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Apollo Cradle & Children’s Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage -  hospital name: Manipal Hospital
-2025-08-01 12:06:43 [main] INFO  com.pages.HomePage - filtered hospitals list
-2025-08-01 12:06:46 [main] INFO  com.pages.HomePage - filtered hospital: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
-2025-08-01 12:06:46 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:06:49 [main] INFO  com.pages.HomePage - filtered hospital: Manipal Hospitals
-2025-08-01 12:06:49 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:06:51 [main] INFO  com.pages.HomePage - filtered hospital: Motherhood Hospital
-2025-08-01 12:06:51 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:06:54 [main] INFO  com.pages.HomePage - filtered hospital: Koshys Hospital
-2025-08-01 12:06:54 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:06:57 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:07:02 [main] INFO  com.pages.HomePage - filtered hospital: Apollo Spectra Hospitals
-2025-08-01 12:07:02 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:07:06 [main] INFO  com.pages.HomePage - filtered hospital: Motherhood Hospital
-2025-08-01 12:07:06 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:07:09 [main] INFO  com.pages.HomePage - filtered hospital: Trilife Hospital
-2025-08-01 12:07:09 [main] INFO  com.pages.HomePage - Driver closed.
-2025-08-01 12:07:11 [main] INFO  com.pages.HomePage - filtered hospital: Apollo Cradle & Children’s Hospital
-2025-08-01 12:07:11 [main] INFO  com.pages.HomePage - Driver closed.
+2025-08-01 12:23:46 [main] INFO  com.pages.HomePage - Homepage initialized.
+2025-08-01 12:23:52 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-08-01 12:23:52 [main] INFO  com.pages.HomePage - Searching for hospitals in: Bangalore
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Manipal Hospitals
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Motherhood Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Koshys Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Navachethana Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Apollo Spectra Hospitals
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Motherhood Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Trilife Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Apollo Cradle & Children’s Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage -  hospital name: Manipal Hospital
+2025-08-01 12:24:01 [main] INFO  com.pages.HomePage - filtered hospitals list
+2025-08-01 12:24:04 [main] INFO  com.pages.HomePage - filtered hospital: Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+2025-08-01 12:24:07 [main] INFO  com.pages.HomePage - filtered hospital: Manipal Hospitals
+2025-08-01 12:24:10 [main] INFO  com.pages.HomePage - filtered hospital: Motherhood Hospital
+2025-08-01 12:24:13 [main] INFO  com.pages.HomePage - filtered hospital: Koshys Hospital
+2025-08-01 12:24:18 [main] INFO  com.pages.HomePage - filtered hospital: Apollo Spectra Hospitals
+2025-08-01 12:24:21 [main] INFO  com.pages.HomePage - filtered hospital: Motherhood Hospital
+2025-08-01 12:24:25 [main] INFO  com.pages.HomePage - filtered hospital: Trilife Hospital
+2025-08-01 12:24:28 [main] INFO  com.pages.HomePage - filtered hospital: Apollo Cradle & Children’s Hospital
+2025-08-01 12:24:33 [main] INFO  com.pages.DiagnosticsPage - DiagnosticsPage initialized 
+2025-08-01 12:24:39 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-08-01 12:24:39 [main] INFO  com.pages.DiagnosticsPage - Navigating to Surgeries section.
+2025-08-01 12:24:39 [main] INFO  com.pages.DiagnosticsPage - Navigating to Lab Tests section.
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - Extracting top cities under Diagnostics.
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Bangalore
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Delhi
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Mumbai
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Chennai
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Hyderabad
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Kolkata
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Pune
+2025-08-01 12:24:41 [main] INFO  com.pages.DiagnosticsPage - City found: Ahmedabad
+2025-08-01 12:24:46 [main] INFO  com.pages.CorporateWellnessPage - CorporateWellnessPage initialized.
+2025-08-01 12:24:51 [main] INFO  com.utils.DriverSetup - Opened Practo homepage.
+2025-08-01 12:24:51 [main] INFO  com.pages.CorporateWellnessPage - Navigating to 'For Corporates' menu.
+2025-08-01 12:24:51 [main] INFO  com.pages.CorporateWellnessPage - Clicking on 'Health & Wellness Plans' option.
+2025-08-01 12:24:55 [main] INFO  com.pages.CorporateWellnessPage - Excel data read successfully from: TestInput\CorporateWellnessPageData.xlsx
+2025-08-01 12:24:55 [main] INFO  com.pages.CorporateWellnessPage - Filling form with invalid data.
+2025-08-01 12:24:56 [main] INFO  com.pages.CorporateWellnessPage - Selecting dropdown values.
+2025-08-01 12:24:56 [main] INFO  com.pages.CorporateWellnessPage - Forcing click on Schedule button.
+2025-08-01 12:24:56 [main] INFO  com.pages.CorporateWellnessPage - Checking for invalid fields.
+2025-08-01 12:24:57 [main] WARN  com.pages.CorporateWellnessPage - Empty Name field.
+2025-08-01 12:24:57 [main] WARN  com.pages.CorporateWellnessPage - Empty Organization Name field.
+2025-08-01 12:24:57 [main] WARN  com.pages.CorporateWellnessPage - Invalid Contact Number.
+2025-08-01 12:24:57 [main] WARN  com.pages.CorporateWellnessPage - Invalid Email ID.

@@ -130,7 +130,7 @@ public class HomePage {
 	                driver.switchTo().window(mainWindow);
 	               
 	            }
-	            logger.info("Driver closed.");   
+	              
 	        }
 	 }
 	        
